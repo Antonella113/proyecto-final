@@ -1,0 +1,179 @@
+
+/* es la segunda y última de las dos partes en que se estructura un documento HTML*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: linear-gradient(120deg, #ff6b6b, #ffd93d, #6bcff6);
+    color: white;
+    overflow-x: hidden;
+}
+
+/* es como decir la cabecera principal*/
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Es el recuadro superpuesto del principio*/
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 20px;
+}
+/*encabezado HTML que se utiliza para marcar el tema principal de la página*/
+.hero h1 {
+    font-size: 4rem;
+    color: #ffd93d;
+    text-shadow: 2px 2px 5px black;
+}
+/*es como decir la cabecera principal*/
+.hero p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+/*Es un botón que se destaca entre un conjunto de botones*/
+.btn-primary {
+    background-color: #fff23f;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+/*Es el color del boton que presionamos*/
+.btn-primary:hover {
+    background-color: #ff6b6b;
+}
+
+/*Es la barra de navegacion de las 4 opciones que puse*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/*indica que se tiene un menú de navegación con diferentes secciones*/
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+/*indica que se tiene un menú de navegación con las diferentes secciones*/
+.navbar ul li {
+    display: inline;
+}
+/*indica que se tiene un menú de navegación */
+.navbar ul li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+/*indica el color en las opciones de navegación */
+.navbar ul li a:hover {
+    background-color: #ffd93d;
+    color: black;
+    transform: scale(1.1);
+}
+
+/*indica la seccion del titulo */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffd93d;
+    text-shadow: 2px 2px 4px black;
+}
+
+/*indica la parte de la galeria*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+/*indica la seccion de las imagenes de la galeria*/
+.gallery img {
+    width: 45%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/*indica la parte del menu*/
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+/*indica la parte del recuadro del menu*/
+.menu-item {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 250px;
+}
+/*indica la parte de las imagenes del menu*/
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/*indica la seccion de los eventos*/
+.event-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    color: white;
+}
+/*indica la seccion del mapa , ya que me parecio interesante ponerlo*/
+
+.map-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+/*indica la parte del titulo se esta misma*/
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffd93d;
+    text-shadow: 2px 2px 4px black;
+}
+/*indica el pie de pagina*/
+
+.footer {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+}
+/*indica el color del pie de pagina y haya un margen */
+.footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+/*Esto es para que cuando pase el pulsor por las redes sociales cambie el color*/
+.footer .social-media a:hover {
+    color: #4dff3d;
+}
